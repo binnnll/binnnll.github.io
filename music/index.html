@@ -5,13 +5,20 @@
   
 
 
-<html class="theme-next muse use-motion" lang="zh-Hans">
+<html class="theme-next pisces use-motion" lang="zh-Hans">
 <head>
   <meta charset="UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
 
 
+
+  
+  
+    
+    
+  <script src="/lib/pace/pace.min.js?v=1.0.2"></script>
+  <link href="/lib/pace/pace-theme-minimal.min.css?v=1.0.2" rel="stylesheet">
 
 
 
@@ -113,12 +120,16 @@
 
 
 
+<meta name="description" content="Musiclalalla~~">
 <meta property="og:type" content="website">
-<meta property="og:title" content="饼">
-<meta property="og:url" content="http://yoursite.com/tags/test/index.html">
+<meta property="og:title" content="music">
+<meta property="og:url" content="http://yoursite.com/music/index.html">
 <meta property="og:site_name" content="饼">
+<meta property="og:description" content="Musiclalalla~~">
+<meta property="og:updated_time" content="2017-06-29T08:53:29.652Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="饼">
+<meta name="twitter:title" content="music">
+<meta name="twitter:description" content="Musiclalalla~~">
 
 
 
@@ -126,7 +137,7 @@
   var NexT = window.NexT || {};
   var CONFIG = {
     root: '/',
-    scheme: 'Muse',
+    scheme: 'Pisces',
     sidebar: {"position":"left","display":"post","offset":12,"offset_float":0,"b2t":false,"scrollpercent":false},
     fancybox: true,
     motion: true,
@@ -146,13 +157,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/tags/test/"/>
+  <link rel="canonical" href="http://yoursite.com/music/"/>
 
 
 
 
 
-  <title>标签: test | 饼</title>
+  <title>music | 饼</title>
   
 
 
@@ -177,7 +188,7 @@
     
   
 
-  <div class="container sidebar-position-left  ">
+  <div class="container sidebar-position-left page-post-detail ">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -216,7 +227,7 @@
         <li class="menu-item menu-item-home">
           <a href="/" rel="section">
             
-              <i class="menu-item-icon fa fa-fw fa-images/home.gif"></i> <br />
+              <i class="menu-item-icon fa fa-fw fa-grav"></i> <br />
             
             首页
           </a>
@@ -226,7 +237,7 @@
         <li class="menu-item menu-item-categories">
           <a href="/categories" rel="section">
             
-              <i class="menu-item-icon fa fa-fw fa-categories"></i> <br />
+              <i class="menu-item-icon fa fa-fw fa-question-circle"></i> <br />
             
             分类
           </a>
@@ -266,9 +277,29 @@
         <li class="menu-item menu-item-guestbook">
           <a href="/guestbook" rel="section">
             
-              <i class="menu-item-icon fa fa-fw fa-question-circle"></i> <br />
+              <i class="menu-item-icon fa fa-fw fa-comment"></i> <br />
             
             留言
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-movie">
+          <a href="/movie" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-bed"></i> <br />
+            
+            电影
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-music">
+          <a href="/music" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-bug"></i> <br />
+            
+            音乐
           </a>
         </li>
       
@@ -291,44 +322,20 @@
           <div id="content" class="content">
             
 
-  <div id="posts" class="posts-collapse">
-    <div class="collection-title">
-      <h1>test<small>标签</small>
-      </h1>
-    </div>
+  <div id="posts" class="posts-expand">
+  <header class="post-header">
+
+	<h1 class="post-title" itemprop="name headline">music</h1>
+
+
+
+</header>
 
     
-      
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2017/06/29/test/" itemprop="url">
-              
-                <span itemprop="name">test</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2017-06-29T09:33:51+08:00"
-              content="2017-06-29" >
-          06-29
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
+    
+      <h1 id="Music"><a href="#Music" class="headerlink" title="Music"></a>Music</h1><h2 id="lalalla"><a href="#lalalla" class="headerlink" title="lalalla~~"></a>lalalla~~</h2>
     
   </div>
-
-  
 
 
           </div>
@@ -336,6 +343,10 @@
 
 
           
+  <div class="comments" id="comments">
+    
+  </div>
+
 
         </div>
         
@@ -355,8 +366,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview sidebar-panel sidebar-panel-active">
+      <section class="site-overview sidebar-panel">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="/images/avatar.gif"
@@ -371,7 +391,7 @@
           
             <div class="site-state-item site-state-posts">
               <a href="/archives">
-                <span class="site-state-item-count">3</span>
+                <span class="site-state-item-count">4</span>
                 <span class="site-state-item-name">日志</span>
               </a>
             </div>
@@ -382,7 +402,7 @@
             
             <div class="site-state-item site-state-categories">
               <a href="/categories/index.html">
-                <span class="site-state-item-count">2</span>
+                <span class="site-state-item-count">4</span>
                 <span class="site-state-item-name">分类</span>
               </a>
             </div>
@@ -393,7 +413,7 @@
             
             <div class="site-state-item site-state-tags">
               <a href="/tags/index.html">
-                <span class="site-state-item-count">3</span>
+                <span class="site-state-item-count">4</span>
                 <span class="site-state-item-name">标签</span>
               </a>
             </div>
@@ -426,6 +446,22 @@
       </section>
 
       
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Music"><span class="nav-number">1.</span> <span class="nav-text">Music</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#lalalla"><span class="nav-number">1.1.</span> <span class="nav-text">lalalla~~</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
 
       
 
@@ -457,12 +493,32 @@
 <div class="theme-info">
   主题 -
   <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
-    NexT.Muse
+    NexT.Pisces
   </a>
 </div>
 
 
         
+<div class="busuanzi-count">
+  <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+  
+    <span class="site-uv">
+      <i class="fa fa-user"></i>
+      <span class="busuanzi-value" id="busuanzi_value_site_uv"></span>
+      
+    </span>
+  
+
+  
+    <span class="site-pv">
+      <i class="fa fa-eye"></i>
+      <span class="busuanzi-value" id="busuanzi_value_site_pv"></span>
+      
+    </span>
+  
+</div>
+
 
         
       </div>
@@ -502,6 +558,9 @@
 
 
 
+  
+  
+
 
 
 
@@ -524,6 +583,12 @@
   
   <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
 
+  
+  <script type="text/javascript" src="/lib/three/three.min.js"></script>
+
+  
+  <script type="text/javascript" src="/lib/three/canvas_sphere.min.js"></script>
+
 
   
 
@@ -536,6 +601,13 @@
 
   
   
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.1"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.1"></script>
+
+
 
   
     <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.1"></script>

@@ -5,13 +5,20 @@
   
 
 
-<html class="theme-next muse use-motion" lang="zh-Hans">
+<html class="theme-next pisces use-motion" lang="zh-Hans">
 <head>
   <meta charset="UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
 
 
+
+  
+  
+    
+    
+  <script src="/lib/pace/pace.min.js?v=1.0.2"></script>
+  <link href="/lib/pace/pace-theme-minimal.min.css?v=1.0.2" rel="stylesheet">
 
 
 
@@ -119,7 +126,7 @@
 <meta property="og:url" content="http://yoursite.com/2017/06/25/GitHub+Hexo个人博客搭建/index.html">
 <meta property="og:site_name" content="饼">
 <meta property="og:description" content="GitHub+Hexo个人博客搭建安装软件1.Node.js 2.Git 打开Git1.开始菜单Git Bash 2.鼠标右键打开GitHub 注册GitHub访问：http://www.github.com/ 配置和使用GitHub可参考一下教程http://beiyuu.com/github-pages 配置SSh keys检查SSh keys首先检查电脑上现有的的SSH Key： 1$ cd">
-<meta property="og:updated_time" content="2017-06-25T03:30:19.003Z">
+<meta property="og:updated_time" content="2017-06-29T09:01:02.796Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="饼">
 <meta name="twitter:description" content="GitHub+Hexo个人博客搭建安装软件1.Node.js 2.Git 打开Git1.开始菜单Git Bash 2.鼠标右键打开GitHub 注册GitHub访问：http://www.github.com/ 配置和使用GitHub可参考一下教程http://beiyuu.com/github-pages 配置SSh keys检查SSh keys首先检查电脑上现有的的SSH Key： 1$ cd">
@@ -130,7 +137,7 @@
   var NexT = window.NexT || {};
   var CONFIG = {
     root: '/',
-    scheme: 'Muse',
+    scheme: 'Pisces',
     sidebar: {"position":"left","display":"post","offset":12,"offset_float":0,"b2t":false,"scrollpercent":false},
     fancybox: true,
     motion: true,
@@ -286,6 +293,16 @@
           </a>
         </li>
       
+        
+        <li class="menu-item menu-item-music">
+          <a href="/music" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-bug"></i> <br />
+            
+            音乐
+          </a>
+        </li>
+      
 
       
     </ul>
@@ -364,6 +381,11 @@
           
 
           
+            <span class="post-meta-divider">|</span>
+            <span class="page-pv"><i class="fa fa-file-o"></i>
+            <span class="busuanzi-value" id="busuanzi_value_page_pv" ></span>
+            </span>
+          
 
           
 
@@ -389,6 +411,7 @@
 <figure class="highlight c"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ cd ~/. ssh</div></pre></td></tr></table></figure>
 <p>检查本机的ssh密钥，如果提示：No such file directory说明是第一次使用Git</p>
 <h4 id="生成新的SSh-Key"><a href="#生成新的SSh-Key" class="headerlink" title="生成新的SSh Key"></a>生成新的SSh Key</h4><figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">$ ssh-keygen -t rsa -C "邮件地址@youremail.com"</div><div class="line">Generating public/private rsa key pair.</div><div class="line">Enter file in which to save the key (/Users/your_user_directory/.ssh/id_rsa):&lt;回车就好&gt;</div></pre></td></tr></table></figure>
+<a id="more"></a>
 <p>然后输入密码：</p>
 <figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">Enter passphrase (empty for no passphrase):&lt;输入加密串&gt;</div><div class="line">Enter same passphrase again:&lt;再次输入加密串&gt;</div></pre></td></tr></table></figure>
 <p>在回车会提示你输入一个密码,这个密码是在你提交项目时使用，如果为空的话提交项目时则不需要输入，这个设置是防止别人往你的项目里提交内容</p>
@@ -655,12 +678,32 @@
 <div class="theme-info">
   主题 -
   <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
-    NexT.Muse
+    NexT.Pisces
   </a>
 </div>
 
 
         
+<div class="busuanzi-count">
+  <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+  
+    <span class="site-uv">
+      <i class="fa fa-user"></i>
+      <span class="busuanzi-value" id="busuanzi_value_site_uv"></span>
+      
+    </span>
+  
+
+  
+    <span class="site-pv">
+      <i class="fa fa-eye"></i>
+      <span class="busuanzi-value" id="busuanzi_value_site_pv"></span>
+      
+    </span>
+  
+</div>
+
 
         
       </div>
@@ -700,6 +743,9 @@
 
 
 
+  
+  
+
 
 
 
@@ -722,6 +768,12 @@
   
   <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
 
+  
+  <script type="text/javascript" src="/lib/three/three.min.js"></script>
+
+  
+  <script type="text/javascript" src="/lib/three/canvas_sphere.min.js"></script>
+
 
   
 
@@ -734,6 +786,13 @@
 
   
   
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.1"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.1"></script>
+
+
 
   
   <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.1"></script>
